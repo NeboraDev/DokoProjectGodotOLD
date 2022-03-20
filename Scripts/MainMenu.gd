@@ -10,10 +10,9 @@ func _ready():
 
 func _on_NewGameButton_pressed():
 	select_audio.play()
-	get_tree().change_scene("res://Scenes/TestWorld.tscn")
+	get_tree().change_scene("res://Scenes/Junkborne/Junkborne.tscn")
 
-func _on_ContinueButton_pressed():
-	select_audio.play()
+func _on_ContinueButton_pressed(): select_audio.play()
 
 func _on_SettingsButton_pressed():
 	select_audio.play()
@@ -25,17 +24,11 @@ func _on_QuitButton_pressed():
 	select_audio.play()
 	get_tree().quit()
 	
-func _on_VolumeButton_pressed():
-	select_audio.play()
-
-func _on_KeybindsButton_pressed():
-	select_audio.play()
-
-func _on_DisplayButton_pressed():
-	select_audio.play()
-
-func _on_DataButton_pressed():
-	select_audio.play()
+func _on_VolumeButton_pressed(): select_audio.play()
+func _on_KeybindsButton_pressed(): select_audio.play()
+func _on_DisplayButton_pressed(): select_audio.play()
+func _on_DataButton_pressed(): select_audio.play()
+	
 
 func _on_BackButton_pressed():
 	select_audio.play()
