@@ -7,7 +7,6 @@ onready var select_audio = $SelectAudio  # Plays the select audio sound effect
 func _ready():
 	settings_menu.visible = false
 	$MenuButtons/NewGameButton.grab_focus()  # Allows keypress
-	fullscreen()
 
 func _on_NewGameButton_pressed():
 	select_audio.play()
@@ -43,8 +42,3 @@ func _on_BackButton_pressed():
 	settings_menu.visible = false
 	main_menu.visible = true
 	$MenuButtons/NewGameButton.grab_focus()
-
-func fullscreen():
-	if Input.is_action_just_pressed("ui_fullscreen"):
-		print("Hello World!")
-		OS.window_fullscreen = !OS.window_fullscreen
